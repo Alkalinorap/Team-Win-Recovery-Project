@@ -222,7 +222,7 @@
 					<condition var1="tw_battery" op=">" var2="0" />
 					<condition var1="tw_battery" op="<" var2="101" />
 				</conditions>
-				<text>Battery: %tw_battery%</text>
+				<text>Bateria: %tw_battery%</text>
 			</object>
 
 			<object type="button">
@@ -336,7 +336,7 @@
 
 		<template name="footer">
 			<object type="console">
-				<slideout resource="slideout" x="10" y="760" />
+				<slideout resource="slideout" x="15" y="760" />
 				<placement x="%console_x%" y="0" w="%console_width%" h="760" />
 				<color foreground="%console_foreground%" background="%console_background%" scroll="%console_scroll%" />
 				<font resource="fixed" />
