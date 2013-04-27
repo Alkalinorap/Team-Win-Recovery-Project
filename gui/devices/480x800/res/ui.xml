@@ -96,7 +96,7 @@
 		<variable name="text_success_color" value="#33B5E5" />
 		<variable name="text_fail_color" value="#FF0101" />
 		<variable name="highlight_color" value="#90909080" />
-		<variable name="home_button_x" value="210" />
+		<variable name="home_button_x" value="212" />
 		<variable name="home_button_y" value="766" />
 		<variable name="back_button_x" value="413" />
 		<variable name="back_button_y" value="766" />
@@ -205,7 +205,7 @@
 				<condition var1="tw_simulate_actions" var2="1" />
 				<font resource="font" />
 				<placement x="100" y="40" />
-				<text>SIMULATING ACTIONS</text>
+				<text>SIMULANDO ACCIONES</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -276,13 +276,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%sort_asc_text_y%" />
-				<text>Sort Ascending:</text>
+				<text>Ord ascendente:</text>
 			</object>
 
 			<object type="button">
 				<placement x="%sort_col1_button_x%" y="%sort_asc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Name</text>
+				<text>Nomb</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=1</action>
 			</object>
@@ -290,7 +290,7 @@
 			<object type="button">
 				<placement x="%sort_col2_button_x%" y="%sort_asc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Date</text>
+				<text>Fech</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=2</action>
 			</object>
@@ -298,7 +298,7 @@
 			<object type="button">
 				<placement x="%sort_col3_button_x%" y="%sort_asc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Size</text>
+				<text>Tama</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=3</action>
 			</object>
@@ -306,13 +306,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%sort_desc_text_y%" />
-				<text>Sort Descending:</text>
+				<text>Ord descendente:</text>
 			</object>
 
 			<object type="button">
 				<placement x="%sort_col1_button_x%" y="%sort_desc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Name</text>
+				<text>Nomb</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-1</action>
 			</object>
@@ -320,7 +320,7 @@
 			<object type="button">
 				<placement x="%sort_col2_button_x%" y="%sort_desc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Date</text>
+				<text>Fech</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-2</action>
 			</object>
@@ -328,7 +328,7 @@
 			<object type="button">
 				<placement x="%sort_col3_button_x%" y="%sort_desc_button_y%" />
 				<font resource="UItext" color="%button_text_color%" />
-				<text>Size</text>
+				<text>Tama</text>
 				<image resource="sort_button" />
 				<action function="set">tw_gui_sort_order=-3</action>
 			</object>
@@ -1090,7 +1090,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row2_text_y%" placement="5" />
-				<text>Wipes Data, Cache, y Dalvik</text>
+				<text>Wipe Data, Cache, y Dalvik</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -1117,7 +1117,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row5_text_y%" placement="5" />
-				<text>La mayoria de veces esto es</text>
+				<text>La mayoria de veces este es</text>
 			</object>
 
 			<object type="text" color="%text_color%">
@@ -1163,8 +1163,8 @@
 					<action function="set">tw_back=wipe</action>
 					<action function="set">tw_action=wipe</action>
 					<action function="set">tw_action_param=data</action>
-					<action function="set">tw_action_text1=Restaurando ajustes de fabrica...</action>
-					<action function="set">tw_complete_text1=Restauracion de fabrica completada</action>
+					<action function="set">tw_action_text1=Restaurando ajustes por defecto...</action>
+					<action function="set">tw_complete_text1=Ajustes restablecidos</action>
 					<action function="page">action_page</action>
 				</actions>
 			</object>
@@ -1172,7 +1172,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Desliza para la restauracion</text>
+				<text>Desliza para hacer wipe</text>
 			</object>
 
 			<object type="action">
@@ -1350,7 +1350,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col1_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Establecer nombre del Backup</text>
+				<text>Nombrar Backup</text>
 				<actions>
 					<action function="set">tw_fileexists=0</action>
 					<action function="page">backupname1</action>
@@ -1362,7 +1362,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col2_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Refrescar volumenes</text>
+				<text>Refrescar</text>
 				<action function="refreshsizes"></action>
 			</object>
 
@@ -1389,7 +1389,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row16_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Saltar la creacion del MD5 durante el backup.</text>
+				<text>Evitar creacion del MD5 durante el backup.</text>
 				<data variable="tw_skip_md5_generate" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -1403,7 +1403,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Deslizar para hacer Backup</text>
+				<text>Desliza para hacer Backup</text>
 			</object>
 
 			<object type="action">
@@ -1613,7 +1613,7 @@
 				<fill color="%button_fill_color%" />
 				<placement x="%col2_x%" y="%backup_button_row1%" w="%button_fill_main_width%" h="%button_fill_quarter_height%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Delete Backup</text>
+				<text>Eliminar Backup</text>
 				<actions>
 					<action function="set">tw_back=restore</action>
 					<action function="set">tw_action=cmd</action>
@@ -1823,7 +1823,7 @@
 				<condition var1="tw_has_usb_storage" var2="1" />
 				<placement x="%col1_x%" y="row4_y" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Montar Almacenamiento USB</text>
+				<text>Montar USB Storage</text>
 				<image resource="main_button" />
 				<action function="page">usb_mount</action>
 			</object>
@@ -1866,13 +1866,13 @@
 			<object type="text" color="%text_color%">
 				<placement x="%col1_x%" y="%row1_text_y%" />
 				<font resource="font" />
-				<text>Asegurate de extraer de forma segura tu dispositivo</text>
+				<text>Asegurate de extraerlo de forma segura desde</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<placement x="%col1_x%" y="%row2_text_y%" />
 				<font resource="font" />
-				<text>desde tu ordenador antes de desmontar!</text>
+				<text>tu ordenador antes de desmontar!</text>
 			</object>
 
 			<object type="button">
@@ -1915,7 +1915,7 @@
 				<condition var1="tw_reboot_system" var2="1" />
 				<placement x="%col1_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>System</text>
+				<text>Sistema</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=reboot</action>
@@ -1968,7 +1968,7 @@
 					<action function="set">tw_text2=seguro que quieres reiniciar?</action>
 					<action function="set">tw_action_text1=Reiniciando...</action>
 					<action function="set">tw_complete_text1=Reiniciando...</action>
-					<action function="set">tw_slider_text=Deslizar para reiniciar</action>
+					<action function="set">tw_slider_text=Desliza para reiniciar</action>
 					<action function="page">rebootcheck</action>
 				</actions>
 			</object>
@@ -2048,7 +2048,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row2_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Usa rm -rf en vez de formatear.</text>
+				<text>Usar rm -rf en vez de formatear.</text>
 				<data variable="tw_rm_rf" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2064,7 +2064,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row4_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Activar verificacion MD5 de los archivos del backup.</text>
+				<text>Activar verificacion MD5 de los backup files.</text>
 				<data variable="tw_skip_md5_check" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2080,7 +2080,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row6_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Simular acciones de testar el tema.</text>
+				<text>Simular acciones al probar tema.</text>
 				<data variable="tw_simulate_actions" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
@@ -2115,7 +2115,7 @@
 			<object type="button">
 				<placement x="%col_center_x%" y="%row4_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Restaurar valores por defecto</text>
+				<text>Restaurar valores</text>
 				<image resource="main_button" />
 				<action function="restoredefaultsettings"></action>
 			</object>
@@ -2227,7 +2227,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col_center_x%" y="%tz_set_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Establecer huso horario</text>
+				<text>Establecer huso</text>
 				<image resource="main_button" />
 				<action function="setguitimezone"></action>
 			</object>
@@ -2330,7 +2330,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Copiar log a la SD</text>
+				<text>Copiar Log a la SD</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -2347,7 +2347,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row1_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Reparar permisos</text>
+				<text>Reparar Permisos</text>
 				<image resource="main_button" />
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -2366,7 +2366,7 @@
 				<condition var1="tw_allow_partition_sdcard" var2="1" />
 				<placement x="%col1_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Particionar Tarjeta SD</text>
+				<text>Particionar SD</text>
 				<image resource="main_button" />
 				<action function="page">partsdcard</action>
 			</object>
@@ -2375,7 +2375,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col2_x%" y="%row2_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Administrador de Archivos</text>
+				<text>File Manager</text>
 				<image resource="main_button" />
 				<action function="page">filemanagerlist</action>
 			</object>
@@ -2384,7 +2384,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%col1_x%" y="%row3_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Consola de comandos</text>
+				<text>Terminal</text>
 				<image resource="main_button" />
 				<action function="page">terminalfolder</action>
 			</object>
@@ -2478,7 +2478,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%sdext_text_x%" y="%sdext_text_y%" />
-				<text>EXT Size: %tw_sdext_size%</text>
+				<text>Volumen EXT: %tw_sdext_size%</text>
 			</object>
 
 			<object type="button">
@@ -2502,13 +2502,13 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%sdswap_text_x%" y="%sdswap_text_y%" />
-				<text>Swap Size: %tw_swap_size%</text>
+				<text>Volumen Swap: %tw_swap_size%</text>
 			</object>
 
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%col1_x%" y="%sdfilesystem_text_y%" />
-				<text>File system: %tw_sdpart_file_system%</text>
+				<text>Formato del sistema: %tw_sdpart_file_system%</text>
 			</object>
 
 			<object type="button">
@@ -2599,7 +2599,7 @@
 					<action function="set">tw_action=htcdumlockrestoreboot</action>
 					<action function="set">tw_text1=Restaurar boot.img original?</action>
 					<action function="set">tw_action_text1=Restaurando Boot original...</action>
-					<action function="set">tw_complete_text1=Restauracion del Boot original completada</action>
+					<action function="set">tw_complete_text1=Restauracion del Boot completada</action>
 					<action function="set">tw_slider_text=Desliza para confirmar</action>
 					<action function="page">confirm_action</action>
 				</actions>
@@ -2681,7 +2681,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5" />
-				<text>Administrador de archivos: Selecciona un archivo o carpeta</text>
+				<text>File Manager: Elige un archivo o carpeta</text>
 			</object>
 
 			<object type="fileselector">
@@ -2731,7 +2731,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%filemanager_select_x%" y="%filemanager_select_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Seleccionar</text>
+				<text>Elegir</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="set">tw_filename1=tw_file_location1</action>
@@ -3300,7 +3300,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%row1_header_y%" placement="5"/>
-				<text>Ir a la carpeta inicial</text>
+				<text>Selecciona la carpeta inicial</text>
 			</object>
 
 			<object type="fileselector">
@@ -3336,7 +3336,7 @@
 				<highlight color="%highlight_color%" />
 				<placement x="%filemanager_select_x%" y="%filemanager_select_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Seleccionar</text>
+				<text>Elegir</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="page">terminalcommand</action>
@@ -3428,7 +3428,7 @@
 					<action function="set">tw_back=advanced</action>
 					<action function="set">tw_action=adbsideload</action>
 					<action function="set">tw_action_text1=ADB Sideload</action>
-					<action function="set">tw_action_text2=Usage: adb sideload filename.zip</action>
+					<action function="set">tw_action_text2=Uso: adb sideload filename.zip</action>
 					<action function="set">tw_complete_text1=ADB Sideload Complete</action>
 					<action function="set">tw_has_cancel=1</action>
 					<action function="set">tw_show_reboot=1</action>
@@ -3440,7 +3440,7 @@
 			<object type="text" color="%text_color%">
 				<font resource="font" />
 				<placement x="%center_x%" y="%slider_text_y%" placement="4" />
-				<text>Desliza para empezar el Sideload</text>
+				<text>Desliza para Sideload</text>
 			</object>
 
 			<object type="action">
