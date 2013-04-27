@@ -1336,7 +1336,7 @@
 				<placement x="%listbox_x%" y="%row1_text_y%" w="%listbox_width%" h="%backup_list_height%" />
 				<header background="%fileselector_header_background%" textcolor="%fileselector_header_textcolor%" separatorcolor="%fileselector_header_separatorcolor%" separatorheight="%fileselector_header_separatorheight%" />
 				<fastscroll linecolor="%fastscroll_linecolor%" rectcolor="%fastscroll_rectcolor%" w="%fastscroll_w%" linew="%fastscroll_linew%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
-				<text>Selecciona las particiones para salvar:</text>
+				<text>Selecciona las particiones para guardar:</text>
 				<icon selected="checkbox_true" unselected="checkbox_false" />
 				<separator color="%fileselector_separatorcolor%" height="%fileselector_separatorheight%" />
 				<background color="%listbox_background%" />
@@ -2040,7 +2040,7 @@
 			<object type="checkbox">
 				<placement x="%col1_x%" y="%row1_text_y%" />
 				<font resource="font" color="%text_color%" />
-				<text>Verificacion de la firma del zip.</text>
+				<text>Verificar la firma del zip.</text>
 				<data variable="tw_signed_zip_verify" />
 				<image checked="checkbox_true" unchecked="checkbox_false" />
 			</object>
